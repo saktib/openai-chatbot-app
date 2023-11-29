@@ -91,11 +91,11 @@ app.post('/upload', upload.array('files'), async (req, res) => {
 // Function to interact with OpenAI's chat API
 async function getChatResponse(context, message) {
   try {	
-	const prompt = `${context}\n\nUser: ${message}\nAI:`;
+	const prompt = `${context.substring(0, 1000)}\n\nUser: ${message.substring(0, 100)}\nAI:`;
 	const url = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
     const response = await axios.post(url, {
       prompt: prompt,
-      max_tokens: 120
+      max_tokens: 100 
     }, {
       headers: {
         'Authorization': `Bearer ${OPENAI_API_KEY}`,
