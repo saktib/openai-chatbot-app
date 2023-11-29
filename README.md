@@ -4,12 +4,16 @@ A custom conversational AI agent (Chatbot) using openAI APIs.
 
 Setup Server:
 > cd  src/server/
+
 > npm install
+
 > node server.js
 
 Setup Client:
 > cd  src/client/
+
 > npm install
+
 > npm start
 
 
