@@ -16,19 +16,22 @@ function Chat() {
     }
   };
 
-  return (
+   return (
     <div>
+	<br></br><br></br>
       <input
         type="text"
         placeholder="Context"
         value={context}
         onChange={(e) => setContext(e.target.value)}
       />
+	  <br></br><br></br>
       <textarea
         placeholder="Your Message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>
+	  <br></br>
       <button onClick={sendMessage}>Send</button>
 
       {chatHistory.map((msg, index) => (
