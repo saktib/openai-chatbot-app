@@ -1,6 +1,7 @@
 # openai-chatbot
 A custom conversational AI agent (Chatbot) using openAI APIs.
 
+Make sure to add the OPENAI KEY and ORG ID in this file openai-chatbot-app/src/server/server.js
 
 Setup Server:
 > cd  src/server/
@@ -15,9 +16,6 @@ Setup Client:
 > npm install
 
 > npm start
-
-Make sure to add the OPENAI KEY and ORG in this file openai-chatbot-app/src/server
-/server.js
 
 Once the client start, you should be able to upload the PDF file.
 
